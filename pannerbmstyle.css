@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color:#a020f0;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:3rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+*::selection{
+    background: var(--main-color);
+    color : #fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: var(--bg-color);
+}
+img{
+    width: 15%;
+    height: 15%;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+
+
+/*Bot png*/
+
+.navbar img{
+  height: 50px;
+  width: 50px;
+  transition: transform .2s;
+}
+.navbar img:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+
+}
+
+/* Home section */
+
+section{
+    padding: 70px 17%;
+}
+section h1{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+section img{
+    height: 30%;
+    width: 30%;
+    border: 2px white solid;
+ }
+section h2{
+    font-size: 30px;
+    color: var(--main-color);
+}
+section h3{
+    font-size: 25px;
+    color: var(--main-color);
+}

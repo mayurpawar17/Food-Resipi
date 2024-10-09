@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --main-color:#a020f0;
+    --text-color:#fff;
+    --bg-color:#1e1c2a;
+    --big-font:3rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+
+*::selection{
+    background: :var(--main-color);
+    color : #fff;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background: var(--bg-color);
+}
+img{
+    width: 15%;
+    height: 15%;
+}
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+/*Bot png*/
+
+.navbar img{
+  height: 50px;
+  width: 50px;
+  transition: transform .2s;
+}
+.navbar img:hover{
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.2);
+
+}
+
+section{
+    padding: 80px 17%;
+}
+section h1{
+    font-size: 35px;
+    color: var(--main-color);
+}
+section form{
+    padding-top: 5%;
+}
+
+section input{
+    padding: 8px 12px;
+    border-radius: 0.5rem;
+    margin-left: 5px;
+}
+
+section form input .submit {
+   background: var(--main-color);
+    
+}
+section form textarea{
+    padding: 10px;
+    overflow: auto;
+    font-size: 20px;
+}
+section form button{
+    padding: 6px 12px;
+    background: var(--main-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+}
+section form button:hover{
+    transition: o.4;
+    background: green;
+}
